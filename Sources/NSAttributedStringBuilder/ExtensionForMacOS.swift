@@ -20,6 +20,14 @@ extension NSAttributedString {
 		return mas
 	}
 
+	/// Applies a background color to the whole range of the attributed string.
+	/// - parameter color: The given color.
+	public func backgroundColor(_ color: NSColor) -> NSAttributedString {
+		let mas = NSMutableAttributedString(attributedString: self)
+		mas.addAttributes([.backgroundColor : color], range: NSMakeRange(0, self.length))
+		return mas
+	}
+
 }
 
 #endif

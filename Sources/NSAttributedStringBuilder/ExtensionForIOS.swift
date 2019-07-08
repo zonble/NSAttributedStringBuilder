@@ -13,10 +13,18 @@ extension NSAttributedString {
 	}
 
 	/// Applies a color to the whole range of the attributed string.
-	/// - parameter colo	r: The given color.
+	/// - parameter color: The given color.
 	public func color(_ color: UIColor) -> NSAttributedString {
 		let mas = NSMutableAttributedString(attributedString: self)
 		mas.addAttributes([.foregroundColor : color], range: NSMakeRange(0, self.length))
+		return mas
+	}
+
+	/// Applies a background color to the whole range of the attributed string.
+	/// - parameter color: The given color.
+	public func backgroundColor(_ color: UIColor) -> NSAttributedString {
+		let mas = NSMutableAttributedString(attributedString: self)
+		mas.addAttributes([.backgroundColor : color], range: NSMakeRange(0, self.length))
 		return mas
 	}
 
