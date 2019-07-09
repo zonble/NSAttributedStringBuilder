@@ -4,7 +4,7 @@ import AppKit
 import UIKit
 #endif
 
-typealias 文字 = NSAttributedString
+typealias 📖 = NSAttributedString
 
 @_functionBuilder
 public class NSAttributedStringBuilder {
