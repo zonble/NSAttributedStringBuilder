@@ -3,15 +3,14 @@ import XCTest
 
 final class NSAttributedStringBuilderTests: XCTestCase {
     func testExample() {
-		let x = 📖 {
-			📖("Hi!")
+		let x = 📄 {
+			📄("Hi!")
 				.🖐(系統字體(30))
 				.🖐(🎨.紅)
-			📖("There!")
+			📄("There!")
 				.🖐(系統字體(20))
 				.🖐(🎨.綠)
 		}
-
 
 		XCTAssertTrue(x.string == "Hi!There!")
 

@@ -4,7 +4,7 @@ import AppKit
 import UIKit
 #endif
 
-typealias 📖 = NSAttributedString
+public typealias 📄 = NSAttributedString
 
 @_functionBuilder
 public class NSAttributedStringBuilder {
@@ -17,7 +17,7 @@ public class NSAttributedStringBuilder {
 	}
 }
 
-extension NSAttributedString {
+extension 📄 {
 
 	/// A convenience method to create a new instance with a string.
 	/// - parameter string: The string object contained in the attributed string.
